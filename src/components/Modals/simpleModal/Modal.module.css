@@ -1,0 +1,42 @@
+.btn{
+    background-image:linear-gradient(rgb(51, 51, 175),rgb(50, 50, 241));
+    color:white;
+    margin:10px 0;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    width:100%;
+    border-radius: 15px;
+    padding: 15px 0;
+}
+.img{
+    border-radius: 0% !important;
+    box-shadow: none !important;
+    /* min-width: 387px;
+    margin:5px auto;
+    max-width: calc((100vh - 280px) * 0.773179); */
+}
+.imgC{
+    box-shadow: none;
+    width:100%;
+    /* padding:2px; */
+}
+.insta{
+    color:rgb(90, 118, 179);
+}
+.insta div{
+    color:black;
+    font-weight: bold;
+}
+.dec{
+    padding: 0 1rem 1rem 1rem;
+    color:gray;
+    font-size:0.8rem;
+}
+.modalBody {
+    height: 99vh;
+    overflow-y: auto;
+}
+.header{
+    background-color: white;
+    color:black;
+}

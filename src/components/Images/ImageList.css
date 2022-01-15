@@ -1,0 +1,38 @@
+.Images-List {
+  padding-top: 40px;
+  column-count: 4 ;
+  column-width: 250px;
+  column-gap: 20px;
+  min-height: 50vh;
+}
+.Images-List img {
+  transition: transform 0.5s;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 1px 2px 5px var(--background);
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  .Images-List {
+   column-count: 2;
+   column-width: 110px;
+   column-gap:10px;
+  }
+  .Images-List img{
+    margin-bottom: 10px;
+  }
+}
+.lazyload {
+  filter: blur(8px);
+  transition: all 1s ease;
+}
+.lazyload.loaded {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.imgWithHover:hover{
+  background-color:rgba(0, 0, 0, 0.411);
+}

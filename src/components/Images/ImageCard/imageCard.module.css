@@ -1,0 +1,54 @@
+.imageCardContainer{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.imageCardContainer:hover .overlay{
+    display:block;
+}
+/* .imageCardContainer:hover .info{
+    display: flex;
+    align-items:center;
+} */
+.info{
+
+    position: absolute;
+    bottom:15px;
+    left:10px;
+    color:white;
+    display:none;
+}
+.icons{
+    position:absolute;
+    display:none;
+    top:15px;
+    right:10px;
+}
+.icons i{
+    color:black;
+    padding:6px 10px;
+    background-color:white;
+    margin-left:3px;
+    cursor: pointer;
+}
+.overlay{
+    position:absolute;
+    display: none;
+    cursor: pointer;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.247);
+}
+.download{
+    position: absolute;
+    display: none;
+    right: 10px;
+    bottom:15px;
+    color:black;
+    padding:6px 10px;
+    background-color:white;
+    cursor: pointer;
+}

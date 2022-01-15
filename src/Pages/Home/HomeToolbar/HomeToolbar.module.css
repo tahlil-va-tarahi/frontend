@@ -1,0 +1,99 @@
+.Toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 4px 8px;
+  color:white;
+  z-index: 100;
+  border: white;
+}
+
+
+.Toolbar_Navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.Toolbar_Logo {
+  margin-left: 1rem;
+}
+.Toolbar_Logo a {
+  color: inherit;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+.spacer {
+  flex: 1;
+}
+.togglerContainer {
+  display: none;
+}
+.Toolbar_Navigation_Item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.Toolbar_Navigation_Item li {
+  padding: 0 0.5rem;
+  margin-right: 1rem;
+}
+.Toolbar_Navigation_Item a {
+  color: inherit;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 9px;
+  color: inherit;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .Toolbar_Navigation_Item {
+    display: none;
+  }
+  .spacer {
+    display: none;
+  }
+  .mobile {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    color: inherit;
+  }
+  .togglerContainer {
+    display: block;
+  }
+}
+.active {
+  border-bottom: 3px solid transparent;
+}
+.toggler {
+  display: block;
+  padding-top: 1px;
+  margin: 3px;
+  color: inherit;
+  width: 100%;
+}
+.togglerFirstChild {
+  width: 50%;
+}
+.togglerLastChild {
+  width: 75%;
+}
+.customize {
+
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 9px;
+  color: inherit;
+  border-radius: 10px;
+}
+
